@@ -7,14 +7,25 @@ PRODUCT_SOONG_NAMESPACES += \
 
 PRODUCT_COPY_FILES += \
     vendor/samsung/t2s/proprietary/vendor/etc/SoundBoosterParam.txt:$(TARGET_COPY_OUT_VENDOR)/etc/SoundBoosterParam.txt \
+    vendor/samsung/t2s/proprietary/vendor/etc/audio_effects_common.conf:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects_common.conf \
+    vendor/samsung/t2s/proprietary/vendor/etc/audio_effects_sec.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects_sec.xml \
+    vendor/samsung/t2s/proprietary/vendor/etc/audio_policy_volumes.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_volumes.xml \
+    vendor/samsung/t2s/proprietary/vendor/etc/default_volume_tables.xml:$(TARGET_COPY_OUT_VENDOR)/etc/default_volume_tables.xml \
     vendor/samsung/t2s/proprietary/vendor/etc/dolby/dax-default.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dolby/dax-default.xml \
     vendor/samsung/t2s/proprietary/vendor/etc/floating_feature.xml:$(TARGET_COPY_OUT_VENDOR)/etc/floating_feature.xml \
+    vendor/samsung/t2s/proprietary/vendor/etc/hearing_aid_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/hearing_aid_audio_policy_configuration.xml \
+    vendor/samsung/t2s/proprietary/vendor/etc/mixer_gains.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_gains.xml \
+    vendor/samsung/t2s/proprietary/vendor/etc/mixer_paths.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths.xml \
     vendor/samsung/t2s/proprietary/vendor/etc/mixer_usb_default.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_usb_default.xml \
     vendor/samsung/t2s/proprietary/vendor/etc/mixer_usb_gray.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_usb_gray.xml \
     vendor/samsung/t2s/proprietary/vendor/etc/mixer_usb_white.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_usb_white.xml \
     vendor/samsung/t2s/proprietary/vendor/etc/nfc/libnfc-nxp_RF.conf:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/libnfc-nxp_RF.conf \
+    vendor/samsung/t2s/proprietary/vendor/etc/playback_record_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/playback_record_audio_policy_configuration.xml \
+    vendor/samsung/t2s/proprietary/vendor/etc/r_submix_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/r_submix_audio_policy_configuration.xml \
+    vendor/samsung/t2s/proprietary/vendor/etc/usb_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/usb_audio_policy_configuration.xml \
     vendor/samsung/t2s/proprietary/vendor/firmware/APBargeIn_AUDIO_SLSI.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/APBargeIn_AUDIO_SLSI.bin \
     vendor/samsung/t2s/proprietary/vendor/firmware/APDV_AUDIO_SLSI.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/APDV_AUDIO_SLSI.bin \
+    vendor/samsung/t2s/proprietary/vendor/firmware/APVD_AUDIO_SLSI.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/APVD_AUDIO_SLSI.bin \
     vendor/samsung/t2s/proprietary/vendor/firmware/AP_AUDIO_SLSI.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/AP_AUDIO_SLSI.bin \
     vendor/samsung/t2s/proprietary/vendor/firmware/NPU.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/NPU.bin \
     vendor/samsung/t2s/proprietary/vendor/firmware/OD_V2.1.6_01_26_QVGA.nnc:$(TARGET_COPY_OUT_VENDOR)/firmware/OD_V2.1.6_01_26_QVGA.nnc \
@@ -22,6 +33,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/t2s/proprietary/vendor/firmware/SoundBoosterParam.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/SoundBoosterParam.bin \
     vendor/samsung/t2s/proprietary/vendor/firmware/a2dpcom.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/a2dpcom.bin \
     vendor/samsung/t2s/proprietary/vendor/firmware/bcm4375B1_murata.hcd:$(TARGET_COPY_OUT_VENDOR)/firmware/bcm4375B1_murata.hcd \
+    vendor/samsung/t2s/proprietary/vendor/firmware/bcm4375B1_semco.hcd:$(TARGET_COPY_OUT_VENDOR)/firmware/bcm4375B1_semco.hcd \
     vendor/samsung/t2s/proprietary/vendor/firmware/bcm4375B1_semco_sem.hcd:$(TARGET_COPY_OUT_VENDOR)/firmware/bcm4375B1_semco_sem.hcd \
     vendor/samsung/t2s/proprietary/vendor/firmware/bcmdhd_clm.blob:$(TARGET_COPY_OUT_VENDOR)/firmware/bcmdhd_clm.blob \
     vendor/samsung/t2s/proprietary/vendor/firmware/bcmdhd_mfg.bin_b1:$(TARGET_COPY_OUT_VENDOR)/firmware/bcmdhd_mfg.bin_b1 \
@@ -55,9 +67,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/t2s/proprietary/vendor/firmware/is_lib.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/is_lib.bin \
     vendor/samsung/t2s/proprietary/vendor/firmware/is_mcu_fw.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/is_mcu_fw.bin \
     vendor/samsung/t2s/proprietary/vendor/firmware/is_rta.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/is_rta.bin \
-    vendor/samsung/t2s/proprietary/vendor/firmware/libivp.elf:$(TARGET_COPY_OUT_VENDOR)/firmware/libivp.elf \
-    vendor/samsung/t2s/proprietary/vendor/firmware/liblog.elf:$(TARGET_COPY_OUT_VENDOR)/firmware/liblog.elf \
-    vendor/samsung/t2s/proprietary/vendor/firmware/libnn.elf:$(TARGET_COPY_OUT_VENDOR)/firmware/libnn.elf \
     vendor/samsung/t2s/proprietary/vendor/firmware/mfc_fw.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/mfc_fw.bin \
     vendor/samsung/t2s/proprietary/vendor/firmware/nvram.txt_1rh_es43_b1:$(TARGET_COPY_OUT_VENDOR)/firmware/nvram.txt_1rh_es43_b1 \
     vendor/samsung/t2s/proprietary/vendor/firmware/nvram.txt_CS01_semco_b1:$(TARGET_COPY_OUT_VENDOR)/firmware/nvram.txt_CS01_semco_b1 \
@@ -76,6 +85,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/t2s/proprietary/vendor/firmware/setfile_imx563.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/setfile_imx563.bin \
     vendor/samsung/t2s/proprietary/vendor/firmware/txse1.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/txse1.bin \
     vendor/samsung/t2s/proprietary/vendor/firmware/txse2.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/txse2.bin \
+    vendor/samsung/t2s/proprietary/vendor/firmware/txse4.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/txse4.bin \
     vendor/samsung/t2s/proprietary/vendor/firmware/vts.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vts.bin \
     vendor/samsung/t2s/proprietary/vendor/firmware/y792_t2.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/y792_t2.bin \
     vendor/samsung/t2s/proprietary/vendor/tee/00000000-0000-0000-0000-000000010081:$(TARGET_COPY_OUT_VENDOR)/tee/00000000-0000-0000-0000-000000010081 \
@@ -123,8 +133,10 @@ PRODUCT_PACKAGES += \
     libswspatializer \
     spatializer-aidl-V1-cpp \
     audio.primary.exynos2100 \
+    sound_trigger.primary.exynos2100 \
     lib_SamsungRec_08020 \
     lib_lvacfs \
+    liboemcrypto \
     librecordalive \
     camera.exynos2100 \
     libbauthserver \
